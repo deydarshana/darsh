@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+	#grad1 {
+    height: 400px;
+    background: -webkit-linear-gradient(left, rgba(255,0,0,0), rgba(255,0,0,2)); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, rgba(255,0,0,0), rgba(255,0,0,2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,2)); /* Standard syntax (must be last) */
+}
+div.background {
+    background: url(01.jpg) repeat;
+    border: 2px solid black;
+}
+
+div.transbox {
+    margin: 30px;
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+    margin: 5%;
+    font-weight: bold;
+    color: #000000;
+} 
+
+#para1{
+
+	color:red;
+	text-align: center;
+}
+
+.center{
+
+	border: 1px solid black;
+    outline-style: double;
+    outline-color: blue;
+    text-align:center;
+    text-shadow:  0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+
+body{
+
+	padding-top:40px;
+	background-image: url("gradient_bg.png");
+    background-repeat: repeat-x;
+}
+p{
+
+	text-shadow:  0 0 3px #FF0000, 0 0 5px #0000FF;
+}
+	</style>
+<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+<body>
+<div class="row">
+
+
+<nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+    
+    <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Home</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#">feedback</a>
+        <li><a href="#">gallary</a>
+        <li><a href="#">features</a>
+        <li><a href="#">faq</a>
+        <li><a href="#">contact us</a>
+          </ul>
+       
+  </div><!-- /.container-fluid -->
+</nav>  
+</div>
+<div class="jumbotron" id="grad1">
+<div class="container">
+<p class="center">One page template</p>
+<div class="background">
+  <div class="transbox">
+    <p>One page template.</p>
+  </div>
+</div>
+</div>
+</div>
+
+
+   </body>
+   </html>
